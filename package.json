@@ -1,0 +1,29 @@
+{
+  "name": "mean-app",
+  "version": "1.0.0",
+  "description": "MEAN stack application",
+  "main": "app.js",
+  "scripts": {
+    "start": "node app.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+ssh://git@github.com/dsandersdev/nodejs_app.git"
+  },
+  "keywords": [
+    "mean"
+  ],
+  "author": "duane",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/dsandersdev/nodejs_app/issues"
+  },
+  "homepage": "https://github.com/dsandersdev/nodejs_app#readme",
+  "dependencies": {
+    "express": "^4.16.4"
+  },
+  "devDependencies": {
+    "mocha": "^5.2.0"
+  }
+}
