@@ -1,0 +1,15 @@
+// USERs
+[
+	{
+		"user_id" : 1,
+		"uname" : "simonH",
+		"display_name" : :"Simon Holmes",
+		"bio" : "Long term full stack develop"
+	},
+	{
+		"user_id" : 2,
+		"uname" : "duaneS",
+		"display_name" : :"Duane Sanders",
+		"bio" : "P/A III"
+	}
+]

@@ -1,0 +1,38 @@
+// POSTS
+[
+	{
+		"post_id" : 1,
+		"title" : "My first post",
+		"content" : :"some content",
+		"comments" :  [
+			{
+				"comment_id" : 1,
+				"content" : "commenting on your first post."
+			}
+		],
+		"author": {
+			"id" : 1,
+			"display_name" : "Simon Holmes"
+		}
+	},
+	{
+		"post_id" : 2,
+		"title" : "My second post",
+		"content" : :"some content"
+		"comments" :  [
+			{
+				"comment_id" :2,
+				"content" : "commenting on your second post."
+			},
+			{
+				"comment_id" : 3,
+				"content" : "commenting on your second post again."
+			}
+		]
+	},
+	{
+		"post_id" : 2,
+		"title" : "My third post",
+		"content" : :"some content"
+	}
+]
