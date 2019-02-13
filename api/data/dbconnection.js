@@ -1,18 +1,28 @@
-var MongoClient = require("mongodb").MongoClient;
-var dburl = 'mongodb://localhost:27017/meanhotel';
+const MongoClient = require("mongodb").MongoClient;
+const assert = require('assert');
+const dburl = 'mongodb://localhost:27017';
+const dbname = 'mean3';
 var _conn = null;
 
 var open = function() {
-	MongoClient.connect(dburl, function(err, db) {
-		if ( err ) {
-			console.log("DB connection failed");
-			return;
-		}
-		_conn = db;
-		console.log("DB connection open", db);
-	});
-	// set _connection
+	//WORKING CODE!!!
+	// Use connect method to connect to the server
+	 MongoClient.connect(dburl, function(err, client) {
+	   //assert.equal(null, err);
+	   if ( err ) {
+		   console.log("error connecting to db!");
+		   return;
+	   } else {
+	     console.log("Connected successfully to server");
 	
+	       //const db = client.db(dbName);
+	       _conn = client.db(dbname);
+	       console.log("server info:", _conn);
+	
+//	         client.close();
+	   }
+	});
+	 // END WORKING CODE!!!!
 };
 
 var get = function() {

@@ -3,7 +3,18 @@ var hotelData = require('../data/hotel-data.json');
 
 module.exports.hotelsGetAll = function(req, res) {
 
+
+
 	var db = dbconn.get();
+	console.log("db from hotel file:", db);
+	var collection = db.collection('hotels');
+	collection.find().toArray(function(err, docs) {
+		console.log("found hotels", docs);
+		res.status(200).json(docs);
+	});
+
+
+	/*
 	console.log("db", db);
 
 	console.log('GET the hotels');
@@ -24,6 +35,7 @@ module.exports.hotelsGetAll = function(req, res) {
 	res
 	 .status(200)
 	 .json({returnData});
+	 */
 };
 module.exports.hotelsGetOne = function(req, res) {
 	// get url paramter
