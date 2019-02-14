@@ -1,7 +1,7 @@
 const MongoClient = require("mongodb").MongoClient;
 const assert = require('assert');
 const dburl = 'mongodb://localhost:27017';
-const dbname = 'mean3';
+const dbname = 'meanhotel';
 var _conn = null;
 
 var open = function() {
