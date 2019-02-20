@@ -36,3 +36,6 @@ process.once('SIGUSR2', function(){
 		process.kill(process.pid, 'SIGUSR2');
 	});
 });
+
+// require in the model file
+require('./hotels.models.js');
