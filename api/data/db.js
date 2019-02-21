@@ -38,4 +38,4 @@ process.once('SIGUSR2', function(){
 });
 
 // require in the model file
-require('./hotels.models.js');
+require('./hotels.model.js');
