@@ -117,3 +117,8 @@ module.exports.reviewsAddOne = function(req, res) {
 		
 		});
 };
+
+//update
+module.exports.reviewsUpdateOne = function(req, res) {
+
+};
