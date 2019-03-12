@@ -1,10 +1,12 @@
-angular.module('myApp').controller('FilmCoontroller', FilmCoontroller);
-function FilmCoontroller($http, $routeParams) {
+angular.module('myApp').controller('FilmController', FilmController);
+function FilmController($routeParams, FilmFactory) {
         var vm = this;
         var id = $routeParams.id;
-        $http.get('http://swapi-tpiros.rhcloud.com/films/' + id).then(function(response) {
-                vm.file = response.data;
-        });
+
+	FilmFactory.getOneFilm(id).then(function(response) {
+		vm.films = response;	
+	});	
+
         vm.bio = 'This is my bio';
 }
 
